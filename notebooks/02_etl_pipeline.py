@@ -10,7 +10,7 @@
 # MAGIC 3. Business Transformations (Gold Layer)
 # MAGIC 4. Analytics & Reporting
 # MAGIC 
-# MAGIC **Author:** Your Name  
+# MAGIC **Author:** Irimia Dorin-Alexandru  
 # MAGIC **Date:** 2026-05-02
 
 # COMMAND ----------

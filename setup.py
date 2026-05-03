@@ -10,12 +10,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="business-analytics-platform",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Irimia Dorin-Alexandru",
+    author_email="alexdorinirimia06@yahoo.com",
     description="Production-ready PySpark ETL pipeline for business analytics",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/pyspark-business-analytics-project",
+    url="https://github.com/AlexDorinIrimia/Business-Analytics-Platform-",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[

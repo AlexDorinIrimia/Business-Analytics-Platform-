@@ -92,8 +92,8 @@ pyspark-business-analytics-project/
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd pyspark-business-analytics-project
+git clone https://github.com/AlexDorinIrimia/Business-Analytics-Platform-
+cd Business-Analytics-Platform-
 
 # Create virtual environment
 python -m venv venv
