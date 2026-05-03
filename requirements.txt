@@ -1,0 +1,27 @@
+# Core dependencies
+pyspark==3.5.0
+delta-spark==3.0.0
+PyYAML==6.0.1
+python-dateutil==2.8.2
+
+# Data manipulation and validation
+pandas==2.1.4
+numpy==1.26.3
+great-expectations==0.18.8
+
+# Testing
+pytest==7.4.4
+pytest-cov==4.1.0
+pytest-spark==0.6.0
+
+# Code quality
+black==23.12.1
+flake8==7.0.0
+mypy==1.8.0
+
+# Utilities
+python-dotenv==1.0.0
+loguru==0.7.2
+
+# Databricks specific (install in Databricks cluster)
+# databricks-connect==14.3.0  # Uncomment for local Databricks development
