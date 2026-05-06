@@ -32,11 +32,11 @@ def spark():
 def sample_sales_data(spark):
     """Create sample sales data for testing"""
     data = [
-        ("TXN001", datetime(2024, 1, 1), "CUST001", "PROD001", 2, 100.0, 0.1, 180.0, "North"),
-        ("TXN002", datetime(2024, 1, 2), "CUST001", "PROD002", 1, 200.0, 0.0, 200.0, "North"),
-        ("TXN003", datetime(2024, 1, 3), "CUST002", "PROD001", 3, 100.0, 0.0, 300.0, "South"),
-        ("TXN004", datetime(2024, 2, 1), "CUST001", "PROD003", 1, 150.0, 0.05, 142.5, "North"),
-        ("TXN005", datetime(2024, 2, 2), "CUST003", "PROD001", 5, 100.0, 0.2, 400.0, "East"),
+        ("TXN001", datetime(2024, 1, 1), "CUST001", "PROD001", 2, 100.0, 0.1, 180.0, "Online", "North"),
+        ("TXN002", datetime(2024, 1, 2), "CUST001", "PROD002", 1, 200.0, 0.0, 200.0, "Store", "North"),
+        ("TXN003", datetime(2024, 1, 3), "CUST002", "PROD001", 3, 100.0, 0.0, 300.0, "Mobile App", "South"),
+        ("TXN004", datetime(2024, 2, 1), "CUST001", "PROD003", 1, 150.0, 0.05, 142.5, "Online", "North"),
+        ("TXN005", datetime(2024, 2, 2), "CUST003", "PROD001", 5, 100.0, 0.2, 400.0, "Store", "East"),
     ]
     
     schema = StructType([
@@ -48,6 +48,7 @@ def sample_sales_data(spark):
         StructField("unit_price", DoubleType(), False),
         StructField("discount_percentage", DoubleType(), True),
         StructField("total_amount", DoubleType(), False),
+        StructField("sales_channel", StringType(), True),
         StructField("region", StringType(), True)
     ])
     
